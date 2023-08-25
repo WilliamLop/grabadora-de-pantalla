@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grabadora Pantalla</title>
+    <!-- Estilos tailwindcss -->
+    <link rel="stylesheet" href="css/tailwind.css">
+    <!-- FontAwasome icons -->
+    <script src="https://kit.fontawesome.com/766c25c2d0.js" crossorigin="anonymous"></script>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="font-poppins bg-slate-200 h-screen grid place-items-center">
+
+    <main class="bg-white p-4 grid gap-4 w-10/12 md:h-5/6 rounded-md shadow-md box-border md:grid-cols-[250px,1fr]">
+        <div class="grid place-items-center md:bg-slate-100">
+            <div class="flex flex-col text-center gap-4 w-10/12 rounded-sm">
+                <button class="bg-green-400 hover:bg-green-600 transition duration-300 ease-in-out text-green-50 py-1 px-1 rounded-sm" id="btn-start">
+                    <i class="fa-solid fa-video"></i>
+                    Empezar grabación
+                </button>
+                <button class="bg-red-400 hover:bg-red-600 transition duration-300 ease-in-out text-red-50 py-1 px-1 rounded-sm" id="btn-stop">
+                    <i class="fa-solid fa-stop"></i>
+                    Parar grabación
+                </button>
+            </div>
+        </div>
+        <div class="flex place-items-center md:bg-slate-100 h-full">
+            <video src="" class="h-5/6 w-full" id="content-video" controls></video>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
